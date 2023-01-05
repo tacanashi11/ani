@@ -5,11 +5,23 @@
 <meta charset="UTF-8">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>ゼミテスト</title>
+<title>zemi</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script src="script.jp"></script>
+
 </head>
 <body>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+
+<h1>
+	<img src="header.png" width="100%" height="auto">
+</h1>
+
+<div class="parent">
+<b class="c05" data-text="タッチしてめくってね" >タッチしてめくってね</b>
+</div>
 
 	<!--aaaa
 	<img src="images/shop.png" alt="" width="320" height="180">
@@ -19,7 +31,7 @@
 
 
 <form>
-	<input type="reset" id="bt01" value="表紙に戻る">
+	
 <div class="cssbook">
 <input id="ch01" type="checkbox" /> 
 <input id="ch02" type="checkbox" /> 
@@ -44,17 +56,18 @@
 <input id="ch21" type="checkbox" />
 
 
-</form>
 
-<label id="pg01a" for="ch01">表紙</label> 
+
+<label id="pg01a" for="ch01">
+	<img src="hyoushi.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
 
 <label id="pg01b" for="ch01">
 	<img src="p01.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label> 
-<label id="pg02a" for="ch02">中の文章1</label> 
+<label id="pg02a" for="ch02"><p class="honbun">ゆうた君は5才の男の子。</p></label> 
 
 <label id="pg02b" for="ch02">
 	<img src="p02.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label> 
-<label id="pg03a" for="ch03">中の文章2</label> 
+<label id="pg03a" for="ch03">朝起きると<br>いつも起こしてくれるのはお母さんなのに<br>今日はなぜかお父さんでした。</label> 
 
 <label id="pg03b" for="ch03">
 	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p03.mp4"></video></label> 
@@ -128,10 +141,11 @@
 	<img src="p20.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
 <label id="pg21a" for="ch21">中の文章20</label> 
 
-<label id="pg21b" for="ch21">裏表紙</label>
+<!-- 裏表紙 -->
+<label id="pg21b" for="ch21"></label>
 
 </div>
-
-
+<input type="reset" id="bt01" value="表紙に戻る">
+</form>
 </body>
 </html>

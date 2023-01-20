@@ -7,15 +7,38 @@
 <meta name="description" content="">
 <title>zemi</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+<script type='text/javascript'>
+function scroll_effect() {
+  var element = document.getElementsByClassName('scroll-up');
+  if(!element) return;
+                      
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+  var showTiming = 200; // 要素を表示するタイミング
+  for(var i = 0; i < element.length; i++) { 
+    var elemClientRect = element[i].getBoundingClientRect(); 
+    var elemY = scrollY + elemClientRect.top; 
+    if(scrollY > elemY - windowH + showTiming) {
+      element[i].classList.add('is-show');
+    }
+  }
+}
+window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+</script>
+<noscript>
+  <style>
+    .load-fade, .scroll-up {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+  </style>
+</noscript>
 
 </head>
 <body>
-
-<script type="text/javascript" src="script.js"></script>
-
-<audio src="ha.mp3" autoplay loop>
-  あなたのブラウザーは <code>audio</code>要素をサポートしていません。
-</audio>
 
 <h1>
 	<img src="header.png" width="100%" height="auto">
@@ -61,135 +84,216 @@
 
 
 <label id="pg01a" for="ch01">
-	<img src="hyoushi.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="hyoushi.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg01b" for="ch01">
-	<img src="p01.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="p01.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label> 
 <label id="pg02a" for="ch02">
-	<img src="m01.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m01.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg02b" for="ch02">
-	<img src="p02.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="p02.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label> 
 <label id="pg03a" for="ch03">
-	<img src="m02.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m02.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg03b" for="ch03">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p03.mp4"></video></label> 
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p03.mp4"></video></label> 
 <label id="pg04a" for="ch04">
-	<img src="m03.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m03.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg04b" for="ch04">
-	<img src="p04.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="p04.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label> 
 <label id="pg05a" for="ch05">
-	<img src="m04.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m04.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg05b" for="ch05">
-	<img src="p05.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
+	<img src="p05.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label>
 <label id="pg06a" for="ch06">
-	<img src="m05.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m05.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg06b" for="ch06">
-	<img src="p06.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
+	<img src="p06.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label>
 <label id="pg07a" for="ch07">
-	<img src="m06.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m06.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg07b" for="ch07">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p07.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p07.mp4"></video></label>
 <label id="pg08a" for="ch08">
-	<img src="m07.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m07.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg08b" for="ch08">
-	<video src="p08.mp4" loop autoplay muted width="90%" max-width="550" height="auto" max-height="309"></video></label>
+	<video src="p08.mp4" loop autoplay muted width="90%" max-width="1920" height="auto" max-height="1080"></video></label>
 <label id="pg09a" for="ch09">
-	<img src="m08.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m08.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg09b" for="ch09">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p09.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p09.mp4"></video></label>
 <label id="pg10a" for="ch10">
-	<img src="m09.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m09.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg10b" for="ch10">
-	<video controls src="p10.mp4" alt="" width="90%" max-width="550" height="auto" max-height="309"></video></label>
+	<video controls src="p10.mp4" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></video></label>
 <label id="pg11a" for="ch11">
-	<img src="m10.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m10.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg11b" for="ch11">
-	<video controls src="p11.mp4" loop autoplay muted width="90%" max-width="550" height="auto" max-height="309"></video></label>
+	<video controls src="p11.mp4" loop autoplay muted width="90%" max-width="1920" height="auto" max-height="1080"></video></label>
 <label id="pg12a" for="ch12">
-	<img src="m11.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m11.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg12b" for="ch12">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p12.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p12.mp4"></video></label>
 <label id="pg13a" for="ch13">
-	<img src="m12.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m12.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg13b" for="ch13">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p13.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p13.mp4"></video></label>
 <label id="pg14a" for="ch14">
-	<img src="m13.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m13.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg14b" for="ch14">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p14.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p14.mp4"></video></label>
 <label id="pg15a" for="ch15">
-	<img src="m14.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m14.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg15b" for="ch15">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p15.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p15.mp4"></video></label>
 <label id="pg16a" for="ch16">
-	<img src="m15.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m15.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg16b" for="ch16">
-	<img src="p16.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
+	<img src="p16.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label>
 <label id="pg17a" for="ch17">
-	<img src="m16.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m16.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg17b" for="ch17">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p17.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p17.mp4"></video></label>
 <label id="pg18a" for="ch18">
-	<img src="m17.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m17.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg18b" for="ch18">
-	<video controls width="90%" max-width="550" height="auto" max-height="309" src="p18.mp4"></video></label>
+	<video controls width="90%" max-width="1920" height="auto" max-height="1080" src="p18.mp4"></video></label>
 <label id="pg19a" for="ch19">
-	<img src="m18.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m18.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg19b" for="ch19">
-	<img src="p19.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
+	<img src="p19.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label>
 <label id="pg20a" for="ch20">
-	<img src="m19.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m19.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <label id="pg20b" for="ch20">
-	<img src="p20.png" alt="" width="90%" max-width="550" height="auto" max-height="309"></label>
+	<img src="p20.png" alt="" width="90%" max-width="1920" height="auto" max-height="1080"></label>
 <label id="pg21a" for="ch21">
-	<img src="m20.png" alt="" width="100%" max-width="550" height="auto" max-height="309"></label> 
+	<img src="m20.png" alt="" width="100%" max-width="1920" height="auto" max-height="1080"></label> 
 
 
 <!-- 裏表紙 -->
 <label id="pg21b" for="ch21">
-	<img src="ar.png" alt="" width="50%" max-width="300" height="auto" max-height="300"></label>
+	<img src="ar.png" alt="" width="50%" max-width="2000" height="auto" max-height="2000"></label>
 
 </div>
 <input type="reset" id="bt01" value="表紙に戻る">
 </form>
+
+
+
+<script>
+	//ポップアップするやつ
+      window.onload = function() {
+        const play = confirm("BGMが流れます")
+        if (play) {
+    play.innerHTML = "停止";
+    music.play();
+  }else {
+          // キャンセルの場合の処理   
+        }
+      }
+</script>
+
+
+
+  <div class="container">
+    <div>
+      <!-- 再生ボタン -->
+      <button id="play" class="btn btn-primary">再生</button><!-- #play -->
+    </div>
+    <div>
+      <!-- 音量ボタン -->
+      <button id="volume-up" class="btn btn-success"><i class="fas fa-caret-up"></i></button><!-- #volume-up -->
+      <button id="volume-down" class="btn btn-success"><i class="fas fa-caret-down"></i></button><!-- #volume-down -->
+      <!-- ミュートボタン -->
+      <button id="mute" class="btn btn-warning"><i class="fas fa-volume-mute"></i></button><!-- .btn btn-warning -->
+    </div>
+  </div><!-- .container -->
+
+
+
+
+<script>
+	'use strict';
+
+// 要素
+const music = new Audio('ha.mp3');
+const play = document.getElementById('play');
+const volumeUp = document.getElementById('volume-up');
+const volumeDown = document.getElementById('volume-down');
+const mute = document.getElementById('mute');
+
+// 再生ボタン
+play.addEventListener('click', function(){
+  if(!music.paused){
+    play.innerHTML ="再生";
+    music.pause();
+  }else{
+    play.innerHTML = "停止";
+    music.play();
+  }
+});
+
+// 音量ボタン
+volumeUp.addEventListener('click', function(){
+  const volume = music.volume;
+  if(volume < 1){
+    music.volume = (volume * 10 + 1) / 10;
+  }
+});
+volumeDown.addEventListener('click', function(){
+  const volume = music.volume;
+  if(volume > 0){
+    music.volume = (volume * 10 - 1) / 10;
+  }
+});
+
+// ミュートボタン
+mute.addEventListener('click', function(){
+  if(music.muted){
+    music.muted = false;
+    mute.innerHTML = '<i class="fas fa-volume-mute">';
+  }else{
+    music.muted = true;
+    mute.innerHTML = '<i class="fas fa-volume-up"></i>';
+  }
+});
+</script>
 </body>
 </html>

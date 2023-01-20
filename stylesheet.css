@@ -1,4 +1,4 @@
-@charset "UTF-8";
+	@charset "UTF-8";
 
 html {
   font-size:62.5%;
@@ -305,7 +305,7 @@ input[type="reset"]:hover {
 }
 
 .sei{position: relative;
-  top: 20%;
+  top: 30vw;
   font-size: 30px;
   background-color: #F3C46F;
   color: white;
@@ -336,7 +336,7 @@ input[type="reset"]:hover {
 }
 
 .tyuu{text-align: center;
-margin-top: 30%;}
+margin-top: 40vw;}
 
 .tyuu2{text-align: center;
 margin-top: 20%;}
